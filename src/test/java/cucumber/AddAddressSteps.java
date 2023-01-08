@@ -57,9 +57,9 @@ public class AddAddressSteps {
     @And("Check if form contains proper details {string},{string},{string},{string},{string},{string}")
     public void checkIfFormContainsProperDetails(String alias, String address, String city, String zip, String country, String phone)
     {
-        String aliasText = driver.findElement(By.xpath("//*[@id=\"address-30203\"]/div[1]/h4")).getText();
+        String aliasText = driver.findElement(By.xpath("//*[@id=\"address-30324\"]/div[1]/h4")).getText();
         Assertions.assertEquals(alias,aliasText);
-        String fullAddressText = driver.findElement(By.xpath("//*[@id=\"address-30203\"]/div[1]/address")).getText();
+        String fullAddressText = driver.findElement(By.xpath("//*[@id=\"address-30324\"]/div[1]/address")).getText();
         Assertions.assertTrue(fullAddressText.contains(address)&& fullAddressText.contains(city)&&fullAddressText.contains(zip)
         && fullAddressText.contains(country)&& fullAddressText.contains(phone));
 

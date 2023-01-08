@@ -9,4 +9,4 @@ Feature: Add Address
 
     Examples:
       | email               |password    |alias| address     | city   |zip    |country        |phone|
-      |czarnajagoda@mail.pl |czarnajagoda|jago | Kaszmirowa 5| Olsztyn| 02-201| United Kingdom|5023652451|
+      |czarnajagoda@mail.pl|czarnajagoda|jago| Kaszmirowa 5| Olsztyn| 02-201| United Kingdom|5023652451|
