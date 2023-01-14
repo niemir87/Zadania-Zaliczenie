@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import page.AddNewAddress;
+import page.addNewAddress;
 
 import java.time.Duration;
 
@@ -49,19 +49,27 @@ public class AddAddressSteps {
     @Then("User fills New address form with {string},{string},{string},{string},{string},{string}")
     public void userFillsNewAddressFormWith(String alias, String address, String city, String zip, String country, String phone)
     {
-        AddNewAddress addNewAddress = new AddNewAddress(driver);
-        addNewAddress.AddNewAddressFillForm(alias,address,city,zip,country,phone);
+        addNewAddress addNewAddress = new addNewAddress(driver);
+        addNewAddress.addNewAddressFillForm(alias,address,city,zip,country,phone);
     }
 
 
     @And("Check if form contains proper details {string},{string},{string},{string},{string},{string}")
     public void checkIfFormContainsProperDetails(String alias, String address, String city, String zip, String country, String phone)
     {
-        String aliasText = driver.findElement(By.xpath("//*[@id=\"address-30324\"]/div[1]/h4")).getText();
+        String aliasText = driver.findElement(By.xpath("//section/div[2]/article/div[1]/h4")).getText();
         Assertions.assertEquals(alias,aliasText);
-        String fullAddressText = driver.findElement(By.xpath("//*[@id=\"address-30324\"]/div[1]/address")).getText();
+        String fullAddressText = driver.findElement(By.xpath("//section/div[2]/article/div[1]/address")).getText();
         Assertions.assertTrue(fullAddressText.contains(address)&& fullAddressText.contains(city)&&fullAddressText.contains(zip)
-        && fullAddressText.contains(country)&& fullAddressText.contains(phone));
+      && fullAddressText.contains(country)&& fullAddressText.contains(phone));
 
+    }
+
+    @And("User deletes added address")
+    public void userDeletesAddedAddress() {
+        WebElement deleteAddressButton = driver.findElement(By.xpath("//section/div[2]/article/div[2]/a[2]/span"));
+        deleteAddressButton.click();
+        String addressDeletedText = driver.findElement(By.xpath("//*[@id=\"notifications\"]/div/article/ul/li")).getText();
+        Assertions.assertTrue(addressDeletedText.contains("Address successfully deleted!"));
     }
 }

@@ -4,14 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class AddNewAddress {
+public class addNewAddress {
     private WebDriver driver;
 
-    public AddNewAddress (WebDriver driver){
+    public addNewAddress(WebDriver driver){
         this.driver = driver;
 
     }
-    public void AddNewAddressFillForm ( String alias, String address, String city, String zip, String country,String phone){
+    public void addNewAddressFillForm(String alias, String address, String city, String zip, String country, String phone){
         WebElement aliasInput = driver.findElement(By.id("field-alias"));
         aliasInput.sendKeys(alias);
         WebElement addressInput = driver.findElement(By.id("field-address1"));

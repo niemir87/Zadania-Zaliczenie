@@ -6,6 +6,7 @@ Feature: Add Address
     When User click Create new address
     Then User fills New address form with "<alias>","<address>","<city>","<zip>","<country>","<phone>"
     And Check if form contains proper details "<alias>","<address>","<city>","<zip>","<country>","<phone>"
+    And User deletes added address
 
     Examples:
       | email               |password    |alias| address     | city   |zip    |country        |phone|
