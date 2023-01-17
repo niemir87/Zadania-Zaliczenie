@@ -15,8 +15,8 @@ import java.time.Duration;
 
 public class AddAddressSteps {
     WebDriver driver;
-    @Given("User is on main site and sign in clicked")
-    public void userIsOnMainSiteAndSignInClicked() {
+    @Given("User is on main site and clicks in sign in")
+    public void userIsOnMainSiteAndClicksInSignIn() {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://mystore-testlab.coderslab.pl/");
@@ -34,14 +34,14 @@ public class AddAddressSteps {
 
     }
 
-    @When("User click Addresses")
-    public void userClickAddresses() {
+    @When("User clicks Addresses")
+    public void userClicksAddresses() {
         WebElement addressButton = driver.findElement(By.xpath("//*[@id=\"addresses-link\"]/span"));
         addressButton.click();
     }
 
-    @When("User click Create new address")
-    public void userClickCreateNewAddress() {
+    @When("User clicks Create new address")
+    public void userClicksCreateNewAddress() {
         WebElement createNewAddress = driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/a/span"));
         createNewAddress.click();
     }
