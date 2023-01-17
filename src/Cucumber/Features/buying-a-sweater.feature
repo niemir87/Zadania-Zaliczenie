@@ -1,4 +1,4 @@
-Feature: Baying a sweater(product)
+Feature: Buying a sweater(product)
   Scenario Outline: User bay sweater(product)
     Given User is on the home page and clicks sign in
     And User logs in with email "<email>" and password "<password>"

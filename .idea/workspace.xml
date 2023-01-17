@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c663f2c-4ffb-4d8b-a449-2426b408e927" name="Changes" comment="commit 1">
-      <change afterPath="$PROJECT_DIR$/src/Cucumber/Features/baying-a-sweater.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/BayingSweaterSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/BayingSweaterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/addToBasket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/findProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/add-address.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/add-address.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/AddAddressSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/AddAddressSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/AddNewAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/addNewAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/baying-a-sweater.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/buying-a-sweater.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/BayingSweaterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/BuyingSweaterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +44,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.BayingSweaterTest">
+  <component name="RunManager" selected="JUnit.AddAddressTest">
     <configuration name="AddAddressTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projekt" />
       <extension name="coverage">
@@ -67,7 +60,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BayingSweaterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BuyingSweaterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projekt" />
       <extension name="coverage">
         <pattern>
@@ -76,7 +69,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cucumber" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.BayingSweaterTest" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.BuyingSweaterTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BayingSweaterTest" />
         <item itemvalue="JUnit.AddAddressTest" />
+        <item itemvalue="JUnit.BuyingSweaterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673192630157</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit 1">
+      <created>1673716150903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673716150903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/Cucumber/Features/baying-a-sweater.feature",
+        features = "src/Cucumber/Features/buying-a-sweater.feature",
         plugin = {"pretty", "html:report.html"}
 )
 
-public class BayingSweaterTest {
+public class BuyingSweaterTest {
 }
